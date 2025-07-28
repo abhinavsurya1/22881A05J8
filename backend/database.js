@@ -1,5 +1,5 @@
 const { Pool } = require('pg');
-const LoggingMiddleware = require('./loggingMiddleware');
+const LoggingMiddleware = require('../logging-middleware/loggingMiddleware');
 
 const logger = new LoggingMiddleware();
 
