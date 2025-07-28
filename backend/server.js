@@ -7,7 +7,7 @@ const validUrl = require('valid-url');
 const moment = require('moment');
 require('dotenv').config();
 
-const LoggingMiddleware = require('./loggingMiddleware');
+const LoggingMiddleware = require('../logging-middleware/loggingMiddleware');
 const { initializeDatabase, urlOperations } = require('./database');
 
 const app = express();
