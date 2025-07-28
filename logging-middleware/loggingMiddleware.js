@@ -32,7 +32,8 @@ class LoggingMiddleware {
       await axios.post(this.testServerUrl, logData, {
         headers: {
           'Content-Type': 'application/json',
-          'User-Agent': 'URL-Shortener-Logging-Middleware/1.0.0'
+          'User-Agent': 'URL-Shortener-Logging-Middleware/1.0.0',
+          'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJhYmhpbmF2c3VyeWE1MzM0QGdtYWlsLmNvbSIsImV4cCI6MTc1MzY4ODIyMywiaWF0IjoxNzUzNjg3MzIzLCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiZGQwMzQzZjctNGZmNy00MTZmLWE2YTAtMThhNmRmM2Y4OTZjIiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoidmFya2FsYSBhYmhpbmF2IHN1cnlhIiwic3ViIjoiOTc0YzExNjAtZjZkNi00NDVlLWI0YzItZDI0ZjliM2U5MzYxIn0sImVtYWlsIjoiYWJoaW5hdnN1cnlhNTMzNEBnbWFpbC5jb20iLCJuYW1lIjoidmFya2FsYSBhYmhpbmF2IHN1cnlhIiwicm9sbE5vIjoiMjI4ODFhMDVqOCIsImFjY2Vzc0NvZGUiOiJ3UEVmR1oiLCJjbGllbnRJRCI6Ijk3NGMxMTYwLWY2ZDYtNDQ1ZS1iNGMyLWQyNGY5YjNlOTM2MSIsImNsaWVudFNlY3JldCI6Imp2QVFOZ2dxamdqaEp3QXUifQ.xp5mwwNgSF_GmaX2dQW6RDkSlpTWCBiXClW11qGGceY'
         },
         timeout: 5000
       });
